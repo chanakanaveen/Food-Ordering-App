@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384477052064",
+    "project_id": "brothers-kitchen-1",
+    "storage_bucket": "brothers-kitchen-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384477052064:android:b01624102c93947be01dc5",
+        "android_client_info": {
+          "package_name": "com.example.brotherskitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384477052064-b66s6thfl51n046f7upnvk692mlpgb9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXfVDCq63G7TAeZSIZi91PE8X7CTNQoFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384477052064-b66s6thfl51n046f7upnvk692mlpgb9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

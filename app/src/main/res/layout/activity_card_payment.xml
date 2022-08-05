@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="299dp"-->
+<!--        android:layout_height="228dp"-->
+<!--        android:layout_above="@+id/btnBuy"-->
+<!--        android:layout_alignStart="@+id/btnBuy"-->
+<!--        android:layout_alignEnd="@+id/btnBuy"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="76dp"-->
+<!--        android:layout_marginTop="512dp"-->
+<!--        android:layout_marginEnd="-22dp"-->
+<!--        android:layout_marginBottom="96dp"-->
+<!--        android:src="@drawable/pay_with_payhere_light" />-->
+
+    <com.braintreepayments.cardform.view.CardForm
+        android:id="@+id/card_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#18881D"
+        android:text="Buy Now"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
