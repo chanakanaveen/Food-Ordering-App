@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.brotherskitchen.MainActivity;
 import com.example.brotherskitchen.R;
 import com.example.brotherskitchen.models.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -114,15 +115,17 @@ public class RegistationActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                            UserModel userModel = new UserModel(userName, userEmail, userPassword, userAddress, userNumber,"");
+                            UserModel userModel = new UserModel(userNumber,userAddress,userEmail,userName,userPassword, "");
                             String id = task.getResult().getUser().getUid();
                             database.getReference().child("Users").child(id).setValue(userModel);
                             progressBar.setVisibility(View.GONE);
 
-                            Toast.makeText(RegistationActivity.this, "Registation Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistationActivity.this, "Registation Successful", Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(RegistationActivity.this, LoginActivity.class));
+                            finish();
                         } else {
                             progressBar.setVisibility(View.GONE);
-                            Toast.makeText(RegistationActivity.this, "Error" + task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistationActivity.this, "Error" + task.getException(), Toast.LENGTH_LONG).show();
                         }
                     }
                 });

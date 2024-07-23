@@ -24,5 +24,13 @@
             android:id="@+id/nav_my_carts"
             android:icon="@drawable/ic_baseline_add_shopping_cart_24"
             android:title="@string/my_carts" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/baseline_help_24"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_info_24"
+            android:title="@string/about" />
     </group>
 </menu>

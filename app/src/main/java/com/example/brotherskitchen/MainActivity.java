@@ -98,8 +98,8 @@ public class MainActivity extends AppCompatActivity {
                         headerAddress.setText(userModel.getAddress());
                         headerNumber.setText(userModel.getNumber());
                         Glide.with(MainActivity.this).load(userModel.getProfileImg()).into(headerImg);
-//                        Toast.makeText(MainActivity.this, snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
-//                        Log.e("1234",snapshot.getValue().toString());
+                      //  Toast.makeText(MainActivity.this, snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
+                        Log.e("1234",userModel.getEmail());
 
                     }
 

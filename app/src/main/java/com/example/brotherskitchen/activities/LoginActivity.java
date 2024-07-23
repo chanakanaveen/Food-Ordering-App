@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         if (TextUtils.isEmpty(userEmail)) {
-            Toast.makeText(this, "Email is empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Email is empty ", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(userPassword)) {
@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         } else {
                             progressBar.setVisibility(View.GONE);
-                            Toast.makeText(LoginActivity.this, "Error" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Email or password incorrect", Toast.LENGTH_LONG).show();
                         }
 
                     }

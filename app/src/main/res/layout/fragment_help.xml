@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.help.HelpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Help Title -->
+            <TextView
+                android:id="@+id/helpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textSize="24sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold" />
+
+            <!-- How to Create an Account -->
+            <TextView
+                android:id="@+id/createAccountTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="How to Create an Account"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/createAccountContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Open the app.\n2. Tap on 'Create New Account' and fill in your details.\n3. Log in with your new credentials.."
+                android:textSize="14sp" />
+
+            <!-- How to Update Your Profile -->
+            <TextView
+                android:id="@+id/updateProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="How to Update Your Profile"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/updateProfileContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Go to the 'Profile' section in the app.\n2. Update your information and save changes. "
+                android:textSize="14sp" />
+
+            <!-- How to Browse Food Categories -->
+            <TextView
+                android:id="@+id/browseCategoriesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="How to Browse Food Categories"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/browseCategoriesContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Open the app.\n2. Tap on 'Categories' in the main menu.\n3. Explore various food categories to find your desired cuisine."
+                android:textSize="14sp" />
+
+            <!-- How to Add Items to Your Cart -->
+            <TextView
+                android:id="@+id/addToCartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="How to Add Items to Your Cart"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addToCartContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Browse through the menus or categories.\n2. Tap on an item to view its details.\n3. Select 'Add to Cart.'"
+                android:textSize="14sp" />
+
+            <!-- How to Place an Order -->
+            <TextView
+                android:id="@+id/placeOrderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="How to Place an Order"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/placeOrderContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Add items to your cart.\n2. Tap on the cart icon and review your order.\n3. Select your preferred payment method (credit/debit card or cash on delivery).\n4. Confirm and place your order."
+                android:textSize="14sp" />
+
+            <!-- How to Make a Payment -->
+            <TextView
+                android:id="@+id/makePaymentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="How to Make a Payment"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/makePaymentContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. During checkout, select your payment method.\n2. Enter your credit/debit card details or choose cash on delivery.\n3. Confirm the payment to complete your order."
+                android:textSize="14sp" />
+
+            <!-- Troubleshooting -->
+            <TextView
+                android:id="@+id/troubleshootingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Troubleshooting"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/troubleshootingContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you experience any issues, try restarting the app or reinstalling it. For further assistance, please contact us at support@brotherskitchen.com."
+                android:textSize="14sp" />
+
+
+            <!-- Contact Information -->
+<!--            <TextView-->
+<!--                android:id="@+id/contactInfoTitle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="Contact Information"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/contactInfoContent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="For any questions or support, please email us at support@brotherskitchen.com."-->
+<!--                android:textSize="14sp" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

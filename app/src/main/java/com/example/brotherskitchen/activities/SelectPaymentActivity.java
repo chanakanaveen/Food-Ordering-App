@@ -78,9 +78,9 @@ public class SelectPaymentActivity extends AppCompatActivity {
                         startActivity(new Intent(SelectPaymentActivity.this, MainActivity.class));
                     }
                 });
-                Toast.makeText(SelectPaymentActivity.this, "Your Order Has Been Placed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SelectPaymentActivity.this, "Your Order Has Been Placed", Toast.LENGTH_LONG).show();
 
-                // payment method eka update krnna   ------>l :(
+                // payment method update    ------>l :(
 
                 final DocumentReference reference = FirebaseFirestore.getInstance().collection("CurrentUser").document(auth.getCurrentUser().getUid())
                         .collection("MyOrder").document(orderID);
